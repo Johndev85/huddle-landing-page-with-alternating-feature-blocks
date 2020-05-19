@@ -29,7 +29,41 @@ h1, h2, h3 {
 }
 
 header {
+    border: 1px solid red;
     display: flex;
     justify-content: space-between;
+    margin: 40px;
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-color: var(--very-pale-cyan);
+
 }
 
+header img {
+    width: 200px;
+}
+
+.hero {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-color: var(--very-pale-cyan);
+
+}
+
+.hero .hero-image {
+    width: 650px;
+}
+
+.hero .hero-build {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+    text-align: left;
+}
+
+.hero .hero-build p {
+    margin: 30px 0;
+}
