@@ -113,5 +113,35 @@ header .header-hero .hero-build button {
     flex-direction: column;
     justify-content: center;
     color: var(--grayish-blue);
-
 }
+
+.interdiv-bottom {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.main-container .div-bottom {
+    text-align: center;
+    width: 40%;
+    padding: 30px 0;
+    margin: 30px;
+    box-shadow: 0px 5px 15px #d2d2d2;
+    border-radius: 20px;
+    text-align: -moz-center;
+}
+
+.main-container .div-bottom h2 {
+    margin-bottom: 15px;
+}
+
+.main-container .div-bottom button {
+    width: 230px;
+    padding: 15px 30px;
+    border-radius: 25px;
+    color: white;
+    background-color: var(--pink-color);
+    font-weight: 700;
+}
+
+/* <-------------------------------------------------FOOTER-------------> */
