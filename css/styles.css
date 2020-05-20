@@ -91,7 +91,7 @@ header .header-hero .hero-build button {
     display: flex;
     justify-content: space-evenly;
     padding: 70px 0;
-    margin: 0 40px;
+    margin: 0 50px;
     margin-bottom: 40px;
     box-shadow: 0px 5px 15px #d2d2d2;
     border-radius: 20px;
@@ -123,11 +123,12 @@ header .header-hero .hero-build button {
 
 .main-container .div-bottom {
     text-align: center;
-    width: 40%;
-    padding: 30px 0;
-    margin: 30px;
-    box-shadow: 0px 5px 15px #d2d2d2;
-    border-radius: 20px;
+    width: 645px;
+    padding: 40px 0;
+    margin: 30px 30px -60px;
+    box-shadow: 1px 1px 10px #d2d2d2;
+    background-color: white;
+    border-radius: 10px;
     text-align: -moz-center;
 }
 
@@ -145,3 +146,59 @@ header .header-hero .hero-build button {
 }
 
 /* <-------------------------------------------------FOOTER-------------> */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 60px 60px;
+    background-color: var(--very-dark-cyan);
+    color: white;
+}
+
+.container-info .inter-container{
+   display: flex;
+   margin: 25px 20px;
+
+}
+
+.container-info .info-img {
+    margin-right: 20px;
+}
+
+#bottom-logo {
+    background-color: white;
+}
+
+.links {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.links .left-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 50px;
+    padding: 15px 0;
+}
+
+.links .right-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.social {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
