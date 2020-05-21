@@ -69,7 +69,7 @@ header .header-hero {
     justify-content: space-evenly;
 }
 
-header .header-hero .hero-image {
+header .header-hero .hero-image img {
     width: 650px;
 }
 
@@ -79,7 +79,6 @@ header .header-hero .hero-build {
     flex-direction: column;
     justify-content: space-evenly;
     align-self: center;
-    text-align: left;
 }
 
 header .header-hero .hero-build p {
@@ -249,4 +248,97 @@ footer {
     text-align: center;
     margin: 10px;
     font-size: 11px;
+}
+
+/* <-------------------------------------------------RESPONSIVE-------------> */
+
+@media (max-width: 375px) {
+
+    body {
+        width: 375px;
+    }
+
+    header {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        padding: 25px 15px;
+        margin-bottom: 60px;
+    }
+
+    header .header-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    header .header-top img {
+        width: 125px;
+        height: 20px;
+    }
+
+    header .header-top button {
+        padding: 10px 30px;
+        border-radius: 20px;
+        margin: 0px;
+        font-size: 0.7em;
+    }
+
+    header .header-hero {
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+    }
+
+    header .header-hero .hero-build {
+        padding: 0 15px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    header .header-hero .hero-build .hero-button {
+        width: 80%;
+        font-size: 0.7em;
+    }
+
+
+    header .header-hero .hero-image {
+        display: inherit;
+        flex-direction: inherit;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .header-hero .hero-image img {
+        width: 280px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .main-container .internal-container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 370px;
+        text-align: center;
+        padding: 60px 10px;
+        margin: 0 0 40px;
+        font-size: 0.7em;
+    }
+
+    .main-container .internal-container .inter-div-img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+
+    .main-container .internal-container:hover {
+        width: 370px;
+    }
+
+    .main-container .internal-container img {
+        width: 300px;
+        display: flex;
+        align-content: center;
+    }
+
 }
