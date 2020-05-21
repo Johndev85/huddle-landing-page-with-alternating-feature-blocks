@@ -43,6 +43,10 @@ header .header-top {
     justify-content: space-between;
 }
 
+header .header-top img:hover {
+    cursor: pointer;
+}
+
 header .header-top button {
     margin-right: 50px;
     padding: 10px 60px;
@@ -52,8 +56,12 @@ header .header-top button {
     font-weight: 700;
 }
 
-header .header-hero .hero-image {
-    width: 200px;
+header .header-top button:hover {
+    background-color: var(--pink-color);
+    color: var(--very-pale-cyan);
+    font-weight: 700;
+    box-shadow: 0px 0px 8px var(--pink-color);
+    cursor: pointer;
 }
 
 header .header-hero {
@@ -64,6 +72,7 @@ header .header-hero {
 header .header-hero .hero-image {
     width: 650px;
 }
+
 
 header .header-hero .hero-build {
     display: flex;
@@ -79,12 +88,23 @@ header .header-hero .hero-build p {
 
 header .header-hero .hero-build button {
     width: 50%;
-    padding: 10px 30px;
+    padding: 15px 30px;
     border-radius: 25px;
     color: white;
     background-color: var(--pink-color);
     font-weight: 700;
 }
+
+header .header-hero .hero-build button:hover {
+    background-color: hsl(322.3, 91.5%, 72.4%);
+    color: var(--very-dark-cyan);
+    font-weight: 600;
+    box-shadow: 0px 0px 8px var(--pink-color);
+    cursor: pointer;
+}
+
+
+
 /* <-------------------------------------------------MAINS STYLES--------------> */
 
 .main-container .internal-container {
@@ -95,6 +115,11 @@ header .header-hero .hero-build button {
     margin-bottom: 40px;
     box-shadow: 0px 5px 15px #d2d2d2;
     border-radius: 20px;
+}
+
+.main-container .internal-container:hover {
+    box-shadow: 1px 1px 10px 10px #d2d2d2;
+    width: 1345px;
 }
 
 .main-container img {
@@ -121,7 +146,7 @@ header .header-hero .hero-build button {
     align-content: flex-end;
 }
 
-.main-container .div-bottom {
+.main-container .interdiv-bottom .div-bottom {
     text-align: center;
     width: 645px;
     padding: 40px 0;
@@ -129,7 +154,11 @@ header .header-hero .hero-build button {
     box-shadow: 1px 1px 10px #d2d2d2;
     background-color: white;
     border-radius: 10px;
-    text-align: -moz-center;
+}
+
+.main-container .interdiv-bottom .div-bottom:hover {
+    box-shadow: 1px 1px 5px 5px #d2d2d2;
+    width: 650px;
 }
 
 .main-container .div-bottom h2 {
@@ -144,6 +173,14 @@ header .header-hero .hero-build button {
     background-color: var(--pink-color);
     font-weight: 700;
 }
+.main-container .div-bottom button:hover {
+    background-color: hsl(322.3, 91.5%, 72.4%);
+    color: var(--very-dark-cyan);
+    font-weight: 600;
+    box-shadow: 0px 0px 8px var(--pink-color);
+    cursor: pointer;
+}
+
 
 /* <-------------------------------------------------FOOTER-------------> */
 
@@ -163,10 +200,6 @@ footer {
 
 .container-info .info-img {
     margin-right: 20px;
-}
-
-#bottom-logo {
-    background-color: white;
 }
 
 .links {
@@ -201,4 +234,19 @@ footer {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+
+}
+
+.social .social-links img {
+    width: 80px;
+}
+
+.social .social-links {
+    cursor: pointer;
+}
+
+.div-atrib .attribution {
+    text-align: center;
+    margin: 10px;
+    font-size: 11px;
 }
